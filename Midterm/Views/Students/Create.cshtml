@@ -1,0 +1,50 @@
+﻿@model Midterm.Models.Students
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>New Student</h2>
+@using (Html.BeginForm("New", "Customers"))
+{
+
+    <div class="form-group">
+        <label>First Name</label>
+        @Html.TextBoxFor(m => m.FirstName, new { @class = "form-control" })
+
+    </div>
+
+    <div class="form-group">
+        <label>Last Name</label>
+        @Html.TextBoxFor(m => m.LastName, new { @class = "form-control" })
+
+    </div>
+
+    <div class="form-group">
+        <label>Course Id</label>
+        @Html.TextBoxFor(m => m.CourseId, new { @class = "form-control" })
+
+    </div>
+
+    <div class="form-group">
+        <label>Course Enrolled Date</label>
+        @Html.TextBoxFor(m => m.CourseEnrolledDate, new { @class = "form-control" })
+
+    </div>
+
+    <div class="form-group">
+        <label>Course Status</label>
+        @Html.TextBoxFor(m => m.CourseStatus, new { @class = "form-control" })
+
+    </div>
+
+    <div class="form-group">
+        <label>Grade</label>
+        @Html.TextBoxFor(m => m.Grade, new { @class = "form-control" })
+
+    </div>
+
+
+
+}
+
